@@ -1,0 +1,139 @@
+.slot-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12rem;
+    height: 100%;
+    align-items: center;
+}
+.user-block{
+    background: rgba(255, 223, 90, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6rem 2rem 1.3rem 5rem;
+    border-radius: 25px;
+    margin-top: 6rem;
+    position: relative;
+    margin-bottom: 7rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.user-icon{
+    width: 12rem;
+    position: absolute;
+    top: -43%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.greeting{
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+.instructions{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1.5rem 2rem;
+    width: 75%;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: none;
+
+    .instruction-note{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        color: #FF8787;
+        padding-bottom: 1.5rem;
+        font-weight: 600;
+    }
+
+    .cancel-instruction{
+        width: 1.9rem;
+        height: 1.9rem;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover, &:focus{
+            background: rgba(red, .7);
+        }
+
+        .cancel-text{
+           padding-bottom: .2rem;
+        }
+    }
+
+    .instruction-list{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        padding-left: 4rem;
+        padding-right: 3rem;
+        color: rgba(0, 0, 0, .6);
+
+        .each-list{
+            &:not(:last-child){
+                padding-bottom: 1.2rem;
+            }
+        }
+    }
+}
+.login-input{
+    background: #F9F9F9;
+    border: 3px solid #C582D5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: block;
+    padding: 2rem 2rem 2rem 4rem;
+    width: 100%;
+    font-size: 1.5rem;
+    outline: none;
+    
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+
+    &:focus{
+        border: 3px solid green;
+        box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
+    }
+    &:focus:invalid{
+        border: 3px solid #ff7730;
+        box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
+    }
+}
+.start-button{
+    background: #FFDF5A;
+    border: 3px solid #C582D5;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 1.5rem 6rem;
+    margin: 2rem 0 3rem 0;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+   // width: 80%;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s;
+
+        &:hover, &:focus{
+            background: rgba(#FFDF5A, .5);
+            transform: scale(1.05);
+        }
+}

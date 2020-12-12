@@ -1,0 +1,78 @@
+.intro-container{
+    // position: relative;
+    height: 100%;
+}
+.shape1{
+    width: 25rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.shape2{
+    width: 40rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.shape3{
+    width: 18rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.shape4{
+    width: 10rem;
+    position: absolute;
+    top: 0;
+    left: 15%;
+}
+.shape5{
+    width: 5rem;
+    position: absolute;
+    top: .8rem;
+    left: 4rem;
+}
+.shape6{
+    width: 5rem;
+    position: absolute;
+    bottom: 1.8rem;
+    right: 17rem;
+}
+.sub-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    //height: 92%;
+    background: #FFFFFF;
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.15);
+    border-radius: 3rem;
+    overflow: hidden;
+
+    @media (max-width: 700px){
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .board{
+        padding: 3rem 2.5rem;
+        background: linear-gradient(348.45deg, #91519D 43.67%, #71397C 99.45%);
+        width: 27%;
+        border-radius: 3rem;
+        
+        @media (max-width: 700px){
+            // display: flex;
+            // flex-direction: row;
+            width: 100%;
+        }
+    }
+    .content{
+        width: 73%;
+        padding: 4rem 0 2rem 0
+    }
+}

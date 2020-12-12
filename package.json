@@ -5,11 +5,21 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
+  },
+  "resolutions": {
+    "eslint-loader": "2.1.2"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "express": "^4.17.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "serve-static": "^1.14.1",
+    "vue": "^2.6.11",
+    "vue-feather-icons": "^5.1.0",
+    "vue-router": "^3.4.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
