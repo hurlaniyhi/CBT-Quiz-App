@@ -30,7 +30,6 @@
 <script>
 import Intro from './reusable/Intro'
 import boardView from './reusable/boardView'
-import {bus} from '../main'
 export default {
     components: {
         "intro": Intro,

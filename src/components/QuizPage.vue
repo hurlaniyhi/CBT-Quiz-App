@@ -71,7 +71,7 @@
 
 <script>
 import Intro from './reusable/Intro'
-import boardView from './reusable/boardView'
+//import boardView from './reusable/boardView'
 import { mainQuestions } from '../functions/mainQuestions'
 import {answeredQuestions, quizTime} from '../functions/otherHelpers'
 import { ChevronLeftIcon, ChevronRightIcon } from 'vue-feather-icons'
