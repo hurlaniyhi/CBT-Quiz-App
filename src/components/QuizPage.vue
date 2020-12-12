@@ -66,7 +66,7 @@
                 </div>
             </div>
        </div>
-   </intro>
+   </intro> 
 </template>
 
 <script> 
@@ -210,9 +210,6 @@ export default {
              this.selectedOption() 
         },
        
-    },
-    destroyed(){
-        localStorage.setItem("token1", "")
     }
   
 }

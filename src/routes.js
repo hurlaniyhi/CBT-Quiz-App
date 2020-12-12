@@ -1,19 +1,21 @@
 import WelcomePage from './components/WelcomePage'
 import Quiz from "./components/QuizPage"
 import Congrats from "./components/CongratPage"
+import ResolveAuth from "./components/reusable/ResolveAuth"
 
 export default [
-    {path: "/", component: WelcomePage,
+    {path: "/", component: WelcomePage},
+    {path: "/resolve/:username", component: ResolveAuth,
         beforeEnter: (to, from, next) => {
             if(!localStorage.getItem("token1")){
-                next()
+                next("/")
             }
             else{
-                next(false)
+                next()
             }
         }
     },
-    {path: "/instruction/:username", component: Quiz, 
+    {path: "/resolve/instruction/:username", component: Quiz, 
         beforeEnter: (to, from, next) => {
             if(localStorage.getItem("token1")){
                 next()

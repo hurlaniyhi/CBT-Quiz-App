@@ -9,7 +9,7 @@
                <p class="greeting">Please sign in to start your test</p>
            </div>
            <div class="instructions" ref="cancelled" @click="hideMe">
-               <div class="cancel-instruction"><p class="cancel-text">x</p></div>
+               <div class="cancel-instruction"><x-icon size="1.5x" class="cancel-text"></x-icon></div>
                <p class="instruction-note">Read Carefully !!!</p>
                <ul class="instruction-list">
                    <li class="each-list">There are 2 categories and a total of 20 questions to be 
@@ -30,10 +30,12 @@
 <script>
 import Intro from './reusable/Intro'
 import boardView from './reusable/boardView'
+import { XIcon } from 'vue-feather-icons'
 export default {
     components: {
         "intro": Intro,
-        "board-view": boardView
+        "board-view": boardView,
+        "x-icon": XIcon
     },
     data(){
         return{
@@ -50,7 +52,7 @@ export default {
 
                 if(this.name){
                     localStorage.setItem("token1", "Rid12345")
-                    this.$router.push(`instruction/${this.name}`)
+                    this.$router.push(`resolve/${this.name}`)
                 }
                 else{
                     this.$refs.cancelled.style.display = "none"
