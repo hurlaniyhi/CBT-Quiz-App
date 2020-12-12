@@ -13,7 +13,7 @@
             </div>
         </div>  
     </intro>
-</template>
+</template> 
 
 <script>
 import Intro from './reusable/Intro'

@@ -69,7 +69,7 @@
    </intro>
 </template>
 
-<script>
+<script> 
 import Intro from './reusable/Intro'
 //import boardView from './reusable/boardView'
 import { mainQuestions } from '../functions/mainQuestions'

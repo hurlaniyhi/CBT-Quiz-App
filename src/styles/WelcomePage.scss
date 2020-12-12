@@ -5,6 +5,30 @@
     padding: 0 12rem;
     height: 100%;
     align-items: center;
+
+    @media (max-width: 1000px){
+        width: 72%;
+        margin: 0 auto;
+        padding: 0 0;
+    }
+
+    @media (max-width: 700px){
+        width: 90%;
+        padding: 0 0;
+        margin: 0 auto;
+    }
+    @media (max-width: 600px){
+        width: 80%;
+    }
+    @media (max-width: 460px){
+        width: 85%;
+    }
+    @media (max-width: 360px){
+        width: 93%;
+    }
+    @media (max-width: 320px){
+        width: 100%;
+    }
 }
 .user-block{
     background: rgba(255, 223, 90, 0.4);
@@ -16,6 +40,10 @@
     margin-bottom: 7rem;
     width: 100%;
     box-sizing: border-box;
+
+    @media (max-width: 700px){
+        width: 90%;
+    }
 }
 .user-icon{
     width: 12rem;
@@ -43,6 +71,32 @@
     box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     display: none;
+
+     
+    @media (max-width: 1000px){
+        width: 120%;
+    }
+     
+    @media (max-width: 940px){
+        transform: translateY(-54%);
+    }
+    @media (max-width: 700px){
+        width: 110%;
+        transform: translateY(-50%);
+    }
+    @media (max-width: 500px){
+        transform: translateY(-52%);
+    }
+    @media (max-width: 407px){
+        width: 112%;
+        transform: translateY(-52%);
+    }
+    @media (max-width: 370px){
+        padding: 1.5rem 0;
+    }
+    @media (max-width: 330px){
+        width: 105%;
+    }
 
     .instruction-note{
         text-align: center;
@@ -103,6 +157,10 @@
     width: 100%;
     font-size: 1.5rem;
     outline: none;
+
+    @media (max-width: 700px){
+        width: 90%;
+    }
     
     &:not(:last-child){
         margin-bottom: 3rem;
@@ -131,6 +189,13 @@
     text-align: center;
     cursor: pointer;
     transition: all .4s;
+
+    @media (max-width: 520px){
+        padding: 1.2rem 4.5rem;
+    }
+    @media (max-width: 520px){
+        padding: 1.1rem 3.5rem;
+    }
 
         &:hover, &:focus{
             background: rgba(#FFDF5A, .5);

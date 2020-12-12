@@ -6,7 +6,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    //background-color: yellow;
+    
+    @media (max-width: 700px){
+        margin-top: 27rem;
+    }
+    @media (max-width: 390px){
+        margin-top: 30rem;
+    }
+    @media (max-width: 355px){
+        margin-top: 35rem;
+    }
 }
 .shape7{
     width: 1.2rem;
@@ -16,7 +25,7 @@
 }
 .logo-label{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 0rem 2rem;
@@ -33,6 +42,12 @@
         text-align: center;
         color: #FFFFFF;
         font-weight: 500;
+
+        @media (max-width: 400px){
+            padding-left: 2rem;
+            padding-right: 2rem;
+            line-height: 3.5rem;
+        }
     }
 }
 .test-info{
@@ -42,10 +57,18 @@
     box-sizing: border-box;
     border-radius: 1rem;
     width: 100%;
-    color: white;       
+    color: white;
+    
+    @media (max-width: 700px){
+        margin-top: 3rem;
+    }
 }
 .start-time, .stop-time{
     font-size: 1.4rem;
+
+    @media (max-width: 700px){
+        display: none;
+    }
 }
 .test-course, .test-type{
     width: 100%;
@@ -55,6 +78,20 @@
     box-sizing: border-box;
     color: rgba(#000, .9);
     font-weight: 500;
+
+    @media (max-width: 700px){
+        width: 50%;
+        margin: 0 auto;
+    }
+    @media (max-width: 500px){
+        width: 60%;
+    }
+    @media (max-width: 360px){
+        width: 70%;
+    }
+    @media (max-width: 310px){
+        width: 85%;
+    }
 }
 .test-course{
     background: rgba(255, 223, 90, 0.7);
@@ -66,9 +103,13 @@
     background: rgba(255, 223, 90, 0.5);
     border: 5px solid rgba(255, 233, 90, 0.2);
     border-radius: 15px;
+    
+    @media (max-width: 700px){
+      margin-top: 2rem;
+    }
 }
 .end-button{
-    display: inline-block;
+    display: block;
     padding: 1rem;
     width: 60%;
     text-align: center;
@@ -80,6 +121,21 @@
     border-radius: 50px;
     box-sizing: border-box;
     cursor: pointer;
+
+    @media (max-width: 700px){
+       margin: 4rem auto 1rem auto;
+       width: 25%;
+       padding: 1.3rem;
+    }
+    @media (max-width: 700px){
+        width: 33%;
+     }
+     @media (max-width: 360px){
+        width: 40%;
+     }
+     @media (max-width: 310px){
+        width: 45%;
+     }
 }
 
 .quiz-question{
@@ -92,6 +148,18 @@
     align-items: center;
     margin-top: -3rem;
     //background-color: yellow;
+
+    @media (max-width: 1080px){
+        padding: 0 3rem;
+    }
+
+    @media (max-width: 700px){
+        padding-top: 7rem;
+    }
+    @media (max-width: 460px){
+        padding: 0 1rem;
+        padding-top: 7rem;
+    }
 }
 .time-left-text{
     font-size: 1.8rem;
@@ -100,6 +168,14 @@
     left: 5.5rem;
     color: rgba(0, 0, 0, 0.4);
     font-weight: 500;
+
+    @media (max-width: 700px){
+        top: 4rem;
+        left: 3rem;
+     }
+    @media (max-width: 460px){
+       left: 1rem
+    }
 }
 .time-left-minutes{
    color: #C582D5; 
@@ -113,6 +189,11 @@
     //justify-content: center;
     align-items: center;
     margin-bottom: 0rem;
+
+    @media (max-width: 390px){
+        align-self: center;
+        margin-top: 3.5rem;
+    }
 }
 .question-instruction{
     font-size: 1.4rem;
@@ -142,6 +223,10 @@
     width: 100%;
     flex-wrap: wrap;
 
+    @media (max-width: 700px){
+        justify-content: center;
+    }
+
     .eachOption{
         position: relative;
         width: 48%;
@@ -159,6 +244,19 @@
         outline: none;
         transition: all .2s;
 
+        @media (max-width: 700px){
+            width: 60%;
+        }
+        @media (max-width: 516px){
+            width: 70%;
+        }
+        @media (max-width: 390px){
+            width: 90%;
+        }
+        // @media (max-width: 314px){
+        //     width: 98%;
+        // }
+
         .option-icon{
             width: 1rem;
             height: 1rem;
@@ -170,6 +268,25 @@
             background: #FFFFFF;
             border: 2px solid #C582D5;  
             transition: all .3s;  
+
+            @media (max-width: 960px){
+                left: 1.5rem;
+            }
+
+            @media (max-width: 900px){
+            left: 2.5rem;
+            }
+
+            @media (max-width: 770px){
+            left: 1.3rem;
+            }
+
+            @media (max-width: 700px){
+            left: 2.5rem;
+            }
+            @media (max-width: 317px){
+               left: 1.2rem;
+            }
         }
     }
     .first{
@@ -210,6 +327,10 @@
     border-radius: 50px;
     outline: none;
     transition: all .2s;
+    
+    @media (max-width: 390px){
+       width: 27%;
+    }
 
     &:hover{
         transform: scale(1.03);
@@ -222,11 +343,12 @@
 .number-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;  // flex
+    justify-content: center;  // flex-start
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-    margin: 3rem 0 .5rem 0
+    margin: 3rem 0 .5rem 0;
+
 }
 .each-number{
     display: flex;

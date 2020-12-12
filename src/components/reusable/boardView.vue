@@ -41,7 +41,6 @@ export default {
     margin-bottom: 6.5rem;
     
     @media (max-width: 700px){
-        margin-top: 12rem;
         margin-bottom: 1rem;
         width: 12rem;
     }

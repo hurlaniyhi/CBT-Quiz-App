@@ -7,6 +7,16 @@
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @media (max-width: 700px){
+        bottom: -24rem;
+    }
+    @media (max-width: 600px){
+        bottom: -15.5rem;
+    }
+    @media (max-width: 364px){
+        bottom: -17rem;
+    }
 }
 .shape2{
     width: 40rem;
@@ -37,6 +47,22 @@
     position: absolute;
     bottom: 1.8rem;
     right: 17rem;
+
+    @media (max-width: 700px){
+        right: 13rem;
+        bottom: -22rem;
+    }
+    @media (max-width: 600px){
+        bottom: -14rem;
+    }
+    @media (max-width: 487px){
+        right: 9rem;
+        bottom: -13rem;
+    }
+    @media (max-width: 365px){
+        right: 9rem;
+        bottom: -16rem;
+    }
 }
 .sub-container{
     display: flex;
@@ -56,6 +82,13 @@
     @media (max-width: 700px){
         flex-direction: column;
         align-items: center;
+        transform: translate(-50%, -38%);
+    }
+    @media (max-width: 600px){
+        transform: translate(-50%, -42%);
+    }
+    @media (max-width: 364px){
+        transform: translate(-50%, -41%);
     }
     
 
@@ -73,6 +106,10 @@
     }
     .content{
         width: 73%;
-        padding: 4rem 0 2rem 0
+        padding: 4rem 0 2rem 0;
+
+        @media (max-width: 700px){
+            width: 90%;
+        }
     }
 }

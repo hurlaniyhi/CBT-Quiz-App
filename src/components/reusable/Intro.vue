@@ -20,7 +20,7 @@
                 <slot name="content-side"></slot>
             </div>
            
-        </div>
+        </div> 
     </div>
 </template>
 
